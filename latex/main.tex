@@ -6,7 +6,8 @@
 \usepackage{setspace}                         % 设置 1.5 倍行距
 \usepackage{fancyhdr}                         % 自定义页眉页脚
 \usepackage{newtxtext,newtxmath}              % 设置 Times New Roman 字体
-\usepackage{amsmath, amssymb, amsthm}         % 数学支持
+\usepackage{amsmath, amsthm}                  % 数学支持
+\usepackage{amssymb}                          % 解决宏包冲突
 \usepackage{graphicx}                         % 插入图片
 \usepackage{hyperref}                         % 目录超链接
 \usepackage{booktabs}                         % 美化表格
@@ -28,6 +29,11 @@
 % \usepackage{showframe}
 \usepackage{etoolbox}
 \usepackage{ragged2e}
+% add-on
+\usepackage{algorithm}                        % 增加对算法展示的支持
+\usepackage{algpseudocode}                    % 增加对伪代码的支持
+% 长表格
+\usepackage{longtable}                        % 增加对长表格的支持
 
 % ================================= 设置公式 ================================
 \AtBeginEnvironment{equation}{\setstretch{1}}             % 设置公式1倍行距
